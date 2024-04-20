@@ -40,5 +40,9 @@ def get_employee_todo_list(employee_id):
 
 
 if __name__ == '__main__':
+    if len(argv) != 2:
+        print("Usage: python3 0-gather_data_from_an_API.py <employee_id>")
+        sys.exit(1)
+
     employee_id = int(argv[1])
     get_employee_todo_list(employee_id)
