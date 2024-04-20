@@ -16,7 +16,6 @@ def get_employee_todo_list(employee_id):
     """
 
     base_url = 'https://jsonplaceholder.typicode.com/'
-    url = 'https://jsonplaceholder.typicode.com/todos?userId='
 
     user_response = requests.get(f'{base_url}/users/{employee_id}')
     user_data = user_response.json()
@@ -33,7 +32,7 @@ def get_employee_todo_list(employee_id):
         user_name, num_done_tasks, total_tasks)
         )
     for task in done_tasks:
-        print(f"\t{task['title']}")
+        print(f"\t {task['title']}")
 
 
 if __name__ == '__main__':
