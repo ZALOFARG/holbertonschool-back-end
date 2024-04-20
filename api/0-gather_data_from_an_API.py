@@ -9,7 +9,8 @@ from sys import argv
 
 
 def get_employee_todo_list(employee_id):
-    """Fetches and displays the employee's todo list
+    """
+    Fetches and displays the employee's todo list
 
     Args:
         employee_id(int): the ID of the employee
