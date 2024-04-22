@@ -37,12 +37,13 @@ def get_employee_todo_list(employee_id):
             "username": username
         }
         task_list.append(task_dict)
-        
+
     json_data = {str(user_id): task_list}
 
     json_f = f'{user_id}.json'
     with open(json_f, 'w') as json_file:
         json.dump(json_data, json_file)
+
 
 if __name__ == '__main__':
     if len(argv) != 2:
